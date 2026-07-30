@@ -1,4 +1,4 @@
-const API = 'http://localhost:3001/api';
+const API = '/api';
 let semuaData = [];
 let ringkasanData = null;
 let neracaData = null;
