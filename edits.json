@@ -1,0 +1,352 @@
+{
+  "5103:PENJUALAN BJ HOUSE WARE": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 4795509899.97
+  },
+  "5105:PENJUALAN BJ KOMPONEN": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 0
+  },
+  "6101:BIAYA GAJI ADM UMUM": {
+    "saldoAwal": 0,
+    "debet": 1173766146,
+    "kredit": 0
+  },
+  "6102:BIAYA POS DAN MATERAI": {
+    "saldoAwal": 0,
+    "debet": 20000,
+    "kredit": 0
+  },
+  "6104:BIAYA ALAT TULIS KANTOR": {
+    "saldoAwal": 0,
+    "debet": 11682920,
+    "kredit": 0
+  },
+  "6106:BIAYA LISTRIK": {
+    "saldoAwal": 0,
+    "debet": 16549962,
+    "kredit": 0
+  },
+  "6108:BIAYA ADM BANK": {
+    "saldoAwal": 0,
+    "debet": 1570761.58,
+    "kredit": 0
+  },
+  "6109:BIAYA PROVISI BANK": {
+    "saldoAwal": 0,
+    "debet": 1515658,
+    "kredit": 0
+  },
+  "6110:BIAYA PERJALANAN DINAS": {
+    "saldoAwal": 0,
+    "debet": 65000,
+    "kredit": 0
+  },
+  "6111:BIAYA ASURANSI KEBAKARAN": {
+    "saldoAwal": 0,
+    "debet": 64398067,
+    "kredit": 0
+  },
+  "6113:BIAYA AIR MINUM": {
+    "saldoAwal": 0,
+    "debet": 1326180,
+    "kredit": 0
+  },
+  "6114:BIAYA PENERANGAN JALAN": {
+    "saldoAwal": 0,
+    "debet": 17189295,
+    "kredit": 0
+  },
+  "6116:BIAYA PERLENGKAPAN KANTOR": {
+    "saldoAwal": 0,
+    "debet": 3459600,
+    "kredit": 0
+  },
+  "6117:BIAYA PEMELIHARAAN KANTOR": {
+    "saldoAwal": 0,
+    "debet": 5652393,
+    "kredit": 0
+  },
+  "6118:BIAYA PEMELIHARAAN INVENTARIS KANTOR": {
+    "saldoAwal": 0,
+    "debet": 3782883,
+    "kredit": 0
+  },
+  "6119:BIAYA PENYUSUTAN INVENTARIS KANTOR": {
+    "saldoAwal": 0,
+    "debet": 13661262.29,
+    "kredit": 0
+  },
+  "6120:BIAYA LAIN-LAIN ADM DAN UMUM": {
+    "saldoAwal": 0,
+    "debet": 3861802,
+    "kredit": 0
+  },
+  "6122:BIAYA ADM IMPORT": {
+    "saldoAwal": 0,
+    "debet": 1500000,
+    "kredit": 0
+  },
+  "6127:BIAYA EMKL": {
+    "saldoAwal": 0,
+    "debet": 4500000,
+    "kredit": 0
+  },
+  "6128:BIAYA PESANGON": {
+    "saldoAwal": 0,
+    "debet": 195011251,
+    "kredit": 0
+  },
+  "6129:BIAYA KONEKSI INTERNET": {
+    "saldoAwal": 0,
+    "debet": 8000000,
+    "kredit": 0
+  },
+  "6133:BIAYA SEWA MESIN FOTOCOPY DAN PRINTER": {
+    "saldoAwal": 0,
+    "debet": 12937000,
+    "kredit": 0
+  },
+  "6135:BIAYA TENAGA KERJA KEBERSIHAN & KEAMANAN": {
+    "saldoAwal": 0,
+    "debet": 285025142,
+    "kredit": 0
+  },
+  "6136:BIAYA JASA MANAGEMENT": {
+    "saldoAwal": 0,
+    "debet": 13238086,
+    "kredit": 0
+  },
+  "6137:BIAYA BPJS KESEHATAN": {
+    "saldoAwal": 0,
+    "debet": 43834982,
+    "kredit": 43834982
+  },
+  "6138:BIAYA BPJS KETENAGAKERJAAN & PENSIUN": {
+    "saldoAwal": 0,
+    "debet": 68989105,
+    "kredit": 68989105
+  },
+  "6139:BIAYA KIRIM MARKETPLACE": {
+    "saldoAwal": 0,
+    "debet": 3544801,
+    "kredit": 0
+  },
+  "6140:BIAYA ASURANSI KENDARAAN": {
+    "saldoAwal": 0,
+    "debet": 1186562.92,
+    "kredit": 0
+  },
+  "6141:BIAYA SEWA BUS JEMPUTAN": {
+    "saldoAwal": 0,
+    "debet": 21375000,
+    "kredit": 0
+  },
+  "6143:BIAYA JASA INSPECTION VPTI": {
+    "saldoAwal": 0,
+    "debet": 13421600,
+    "kredit": 0
+  },
+  "6144:BIAYA EKSPEDISI": {
+    "saldoAwal": 0,
+    "debet": 24003862,
+    "kredit": 0
+  },
+  "6145:BIAYA LOGISTIK": {
+    "saldoAwal": 0,
+    "debet": 6923200,
+    "kredit": 0
+  },
+  "6146:JASA PELAYANAN PELABUHAN": {
+    "saldoAwal": 0,
+    "debet": 15943000,
+    "kredit": 0
+  },
+  "6147:BIAYA ANGKUT BARANG": {
+    "saldoAwal": 0,
+    "debet": 23700000,
+    "kredit": 0
+  },
+  "6148:BIAYA IMPOR": {
+    "saldoAwal": 0,
+    "debet": 57946000,
+    "kredit": 57946000
+  },
+  "6201:BIAYA GAJI PENJUALAN": {
+    "saldoAwal": 0,
+    "debet": 553463930,
+    "kredit": 0
+  },
+  "6202:BIAYA IKLAN DAN PROMOSI": {
+    "saldoAwal": 0,
+    "debet": 65527129,
+    "kredit": 0
+  },
+  "6206:BIAYA TELEPHONE": {
+    "saldoAwal": 0,
+    "debet": 10175424,
+    "kredit": 0
+  },
+  "6208:BIAYA PEMELIHARAAN KENDARAAN": {
+    "saldoAwal": 0,
+    "debet": 18452500,
+    "kredit": 0
+  },
+  "6209:BIAYA PEMELIHARAAN GUDANG": {
+    "saldoAwal": 0,
+    "debet": 1280189,
+    "kredit": 0
+  },
+  "6210:BIAYA PEMELIHARAAN PERALATAN GUDANG": {
+    "saldoAwal": 0,
+    "debet": 2035400,
+    "kredit": 0
+  },
+  "6211:BIAYA PERLENGKAPAN GUDANG": {
+    "saldoAwal": 0,
+    "debet": 4807800,
+    "kredit": 0
+  },
+  "6212:BIAYA LAIN-LAIN PENJUALAN": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 0
+  },
+  "6213:BIAYA PENYUSUTAN KENDARAAN": {
+    "saldoAwal": 0,
+    "debet": 7373921.36,
+    "kredit": 0
+  },
+  "6214:BIAYA PENYUSUTAN BANGUNAN": {
+    "saldoAwal": 0,
+    "debet": 29261672.1,
+    "kredit": 0
+  },
+  "6219:BIAYA PENYUSUTAN INSTALASI LISTRIK": {
+    "saldoAwal": 0,
+    "debet": 6177475,
+    "kredit": 0
+  },
+  "6227:BIAYA HYPERMAKET & ADM": {
+    "saldoAwal": 0,
+    "debet": 538819611.5,
+    "kredit": 538819611.5
+  },
+  "6228:BIAYA KONSULTAN": {
+    "saldoAwal": 0,
+    "debet": 191668200,
+    "kredit": 0
+  },
+  "6230:BIAYA LAIN-LAIN MARKETPLACE": {
+    "saldoAwal": 0,
+    "debet": 17315921.56,
+    "kredit": 0
+  },
+  "6231:BIAYA HONOR NOTARIS": {
+    "saldoAwal": 0,
+    "debet": 2051282,
+    "kredit": 0
+  },
+  "6232:BIAYA ADM. LAYANAN MARKETPLACE": {
+    "saldoAwal": 0,
+    "debet": 457667214,
+    "kredit": 0
+  },
+  "92:BIAYA SELISIH KURS": {
+    "saldoAwal": 0,
+    "debet": 48551474.64,
+    "kredit": 0
+  },
+  "93:BIAYA PAJAK": {
+    "saldoAwal": 0,
+    "debet": 1601790.4,
+    "kredit": 0
+  },
+  "933:BIAYA PAJAK PPH PS 4 AYAT 2": {
+    "saldoAwal": 0,
+    "debet": 9000000,
+    "kredit": 0
+  },
+  "96:BIAYA PEMBULATAN SELISIH": {
+    "saldoAwal": 0,
+    "debet": 4850475.02,
+    "kredit": 4849364.4
+  },
+  "71:PENDAPATAN BUNGA": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 111246624.79
+  },
+  "711:PENDAPATAN BUNGA PINJAMAN": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 4225806
+  },
+  "72:PENDAPATAN SELISIH KURS": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 7070899
+  },
+  "73:PENDAPATAN SELISIH": {
+    "saldoAwal": 0,
+    "debet": 7070899,
+    "kredit": 7071256.24
+  },
+  "74:PENDAPATAN SEWA": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 0
+  },
+  "76:PENDAPATAN LAIN-LAIN": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 417896.34
+  },
+  "78:PENDAPATAN DEVIDEN": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 1500000000
+  },
+  "5109:PENJUALAN BJ PLASTIK": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 5462210123.61
+  },
+  "5112:PENJUALAN BJ UMUM": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 218753150.78
+  },
+  "5116:PENJUALAN BJ PLASTIK FURNITURE": {
+    "saldoAwal": 0,
+    "debet": 0,
+    "kredit": 13712662438.89
+  },
+  "5703:HPP BJ HOUSEWARE": {
+    "saldoAwal": 0,
+    "debet": 4148792230.37,
+    "kredit": 0
+  },
+  "5705:HPP BJ KOMPONEN": {
+    "saldoAwal": 0,
+    "debet": 34096311.36,
+    "kredit": 0
+  },
+  "5709:HPP BJ PLASTIK": {
+    "saldoAwal": 0,
+    "debet": 4725631088.44,
+    "kredit": 0
+  },
+  "5712:HPP BJ UMUM": {
+    "saldoAwal": 0,
+    "debet": 201252898.72,
+    "kredit": 0
+  },
+  "5716:HPP BJ PLASTIK FURNITURE": {
+    "saldoAwal": 0,
+    "debet": 11863509909.01,
+    "kredit": 0
+  }
+}

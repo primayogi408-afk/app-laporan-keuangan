@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPK - Laporan Keuangan</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="uploadOverlay" class="upload-overlay">
+    <div class="upload-box">
+      <h2>Upload File Excel</h2>
+      <p>Pilih file Excel master data (format .xlsx)</p>
+      <form id="uploadForm">
+        <div class="file-input-wrapper">
+          <input type="text" id="periodName" class="form-input" placeholder="Nama periode (cth: Januari 2026)" style="width:100%;margin-bottom:8px;padding:8px;border:1px solid #ddd;border-radius:4px;box-sizing:border-box;">
+          <input type="file" id="fileInput" accept=".xlsx,.xls" class="file-input-visible">
+          <div id="fileDisplay" style="margin-top:8px;font-size:13px;color:#666;"></div>
+        </div>
+        <button type="submit" class="btn-primary" id="btnUpload" disabled>Upload & Proses</button>
+      </form>
+      <div id="uploadStatus"></div>
+    </div>
+  </div>
+
+  <div class="app-container hidden" id="appContainer">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>LPK</h2>
+        <p>PT. Cahaya Buana Kemala</p>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="nav-item active" onclick="showPage('dashboard')">&#9632; Dashboard</a>
+        <a class="nav-item" onclick="showPage('semua-data')">&#9632; Semua Data</a>
+        <a class="nav-item" onclick="showPage('neraca')">&#9632; Neraca</a>
+        <a class="nav-item" onclick="showPage('laba-rugi')">&#9632; Laba Rugi</a>
+        <a class="nav-item" onclick="showPage('konfigurasi')">&#9881; Konfigurasi</a>
+      </nav>
+      <div class="sidebar-period">
+        <div style="padding:8px 16px;font-size:11px;color:#999;text-transform:uppercase;letter-spacing:1px;">Periode</div>
+        <div id="periodSelector" class="period-selector"></div>
+      </div>
+      <div class="sidebar-footer">
+        <a class="nav-item" onclick="uploadUlang()">&#128194; Upload Ulang</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" onclick="toggleSidebar()">&#9776;</button>
+        <h1 id="pageTitle">Dashboard</h1>
+      </header>
+
+      <div class="content">
+        <div id="page-dashboard" class="page active">
+          <div class="summary-cards" id="summaryCards"></div>
+          <div class="chart-row">
+            <div class="card"><canvas id="chartKategori"></canvas></div>
+            <div class="card"><canvas id="chartPie"></canvas></div>
+          </div>
+        </div>
+
+        <div id="page-semua-data" class="page">
+          <div class="card">
+            <div class="card-header">
+              <h3>Semua Data Buku Besar</h3>
+              <span id="totalData" class="badge"></span>
+            </div>
+            <div class="toolbar">
+              <input type="text" id="searchInput" placeholder="Cari kode / nama / kategori..." onkeyup="searchData(event)">
+              <select id="filterKategori" onchange="filterData()">
+                <option value="">Semua Kategori</option>
+              </select>
+            </div>
+            <div id="batchBar" class="batch-bar hidden">
+              <span id="selectedCount">0 item dipilih</span>
+              <button class="btn-primary btn-sm" onclick="batchEditSaldoAwal()">Edit Saldo Awal</button>
+              <button class="btn-sm" style="border:1px solid #ccc;background:#fff;color:#666;" onclick="clearSelection()">Batal</button>
+            </div>
+            <div class="table-wrapper">
+              <table>
+                <thead><tr>
+                  <th style="width:32px"><input type="checkbox" id="checkAll" onchange="toggleSelectAll()"></th>
+                  <th style="width:36px">AKSI</th><th>KODE</th><th>NAMA PERKIRAAN</th><th class="num">SALDO AWAL</th>
+                  <th class="num">DEBET</th><th class="num">KREDIT</th><th class="num">NETT CHANGE</th>
+                  <th class="num">SALDO AKHIR</th><th>KATEGORI</th>
+                </tr></thead>
+                <tbody id="tbodySemuaData"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div id="page-neraca" class="page">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <span></span>
+            <button class="btn-primary btn-sm" onclick="downloadNeraca()">&#8681; Download Excel</button>
+          </div>
+          <div class="neraca-container" id="neracaContainer">
+            <div class="neraca-title">
+              <h2>PT. CAHAYA BUANA KEMALA</h2>
+              <h3>NERACA</h3>
+              <p>PER : <span id="neracaPeriode">31 JANUARI 2026</span></p>
+            </div>
+            <table class="neraca-table" id="neracaTable">
+              <thead>
+                <tr>
+                  <th style="width:30%">KETERANGAN</th><th class="num" style="width:12%">TOTAL</th><th class="num" style="width:8%">%</th>
+                  <th style="width:30%">KETERANGAN</th><th class="num" style="width:12%">TOTAL</th><th class="num" style="width:8%">%</th>
+                </tr>
+              </thead>
+              <tbody id="neracaBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="page-laba-rugi" class="page">
+          <div class="card">
+            <div class="card-header"><h3>LAPORAN LABA RUGI</h3>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <select id="labaRugiMode" onchange="ubahModeLabaRugi()" style="padding:6px 10px;border:1px solid #ddd;border-radius:6px;font-size:12px;outline:none;">
+                  <option value="netchange">Nett Change</option>
+                  <option value="saldoakhir">Saldo Akhir</option>
+                </select>
+                <button class="btn-primary btn-sm" onclick="downloadLabaRugi()">&#8681; Download Excel</button>
+              </div>
+            </div>
+            <div id="labaRugiContent"></div>
+          </div>
+        </div>
+
+        <div id="page-konfigurasi" class="page">
+          <div class="card">
+            <div class="card-header"><h3>Konfigurasi</h3><button class="btn-primary btn-sm" onclick="simpanConfig()">Simpan</button></div>
+            <div class="config-tabs">
+              <button class="config-tab active" data-type="neraca" onclick="showConfigTab('neraca')">Neraca</button>
+              <button class="config-tab" data-type="labaRugi" onclick="showConfigTab('labaRugi')">Laba Rugi</button>
+            </div>
+            <p class="text-muted" id="configDesc">Atur kategori mana yang masuk ke bagian Neraca. Drag & drop kategori antar bagian.</p>
+            <div class="config-layout">
+              <div class="config-left">
+                <div id="configContainer" class="config-stack"></div>
+              </div>
+              <div class="config-right">
+                <div class="card" style="margin:0;">
+                  <h4 style="margin-bottom:4px;font-size:13px;">Kategori Tidak Terpakai</h4>
+                  <p style="font-size:11px;color:#888;margin-bottom:8px;">Seret ke bagian kiri</p>
+                  <div id="unusedList" class="config-section" style="border:none;padding:0;max-height:calc(100vh - 260px);overflow-y:auto;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="loading" class="loading hidden">Memuat data...</div>
+  <script src="app.js"></script>
+</body>
+</html>

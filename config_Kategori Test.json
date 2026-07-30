@@ -1,0 +1,70 @@
+{
+  "neraca": {
+    "AKTIVA LANCAR": [
+      "KAS",
+      "BANK",
+      "PIUTANG DAGANG",
+      "PIUTANG LAIN-LAIN",
+      "PERSEDIAAN BARANG",
+      "PPN LEBIH BAYAR",
+      "PPN YMH DITERIMA",
+      "PPN MASUKAN",
+      "PPH 22 DIBAYAR DI MUKA",
+      "PPH 23 DIBAYAR DI MUKA",
+      "PPH 25 DIBAYAR DI MUKA",
+      "BIAYA DIBAYAR DI MUKA",
+      "PENDAPATAN YMH DITERIMA",
+      "UANG MUKA PEMBELIAN",
+      "ASURANSI DIBAYAR DI MUKA",
+      "DEPOSITO"
+    ],
+    "AKTIVA LAIN-LAIN": [
+      "MODAL PENYERTAAN"
+    ],
+    "AKTIVA TETAP": [
+      "NILAI PEROLEHAN",
+      "AKUMULASI PENYUSUTAN"
+    ],
+    "HUTANG LANCAR": [
+      "HUTANG DAGANG",
+      "UANG MUKA PENJUALAN",
+      "HUTANG LAIN-LAIN",
+      "PPN YMH DIBAYAR",
+      "PPN KELUARAN",
+      "PPH 21 YMH DIBAYAR",
+      "PPH 23 YMH DIBAYAR",
+      "PPH 25 YMH DIBAYAR",
+      "PPH PS 4(2) YMH DIBAYAR",
+      "PPH 29 TERHUTANG",
+      "PPH 26 YMH DIBAYAR",
+      "BIAYA YMH DIBAYAR"
+    ],
+    "MODAL": [
+      "MODAL DISETOR",
+      "LABA DITAHAN",
+      "LABA ( RUGI ) S/D BULAN LALU",
+      "LABA ( RUGI ) BULAN INI",
+      "AGIO SAHAM"
+    ]
+  },
+  "labaRugi": {
+    "PENJUALAN": [
+      "PENJUALAN"
+    ],
+    "HARGA POKOK PENJUALAN": [
+      "HARGA POKOK PENJUALAN"
+    ],
+    "BIAYA PENJUALAN": [
+      "BIAYA PENJUALAN"
+    ],
+    "BIAYA ADM UMUM": [
+      "BIAYA ADM UMUM"
+    ],
+    "PENDAPATAN NON OPERASIONAL": [
+      "PENDAPATAN NON OPERASIONAL"
+    ],
+    "BIAYA NON OPERASIONAL": [
+      "BIAYA NON OPERASIONAL"
+    ]
+  }
+}
